@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><style>
+    *{
+        margin: 0;
+    }
+    .container{
+       display: flex;
+       flex-direction: row;
+       width: 97vw;
+       height: 410px;
+       /* border: 2px solid red; */
+       position: relative;
+    }
+    .header{
+        display: flex;
+        width: 97vw;
+        height: 70px;
+        /* border: 2px solid red; */
+        /* margin-left: 30px; */
+        background-color: #f3f2f2;
+        padding-left: 20px;
+    }
+    .name{
+        display: flex;
+        width: 250px;
+        height: 50px;
+        margin-top: 10px;
+        /* border: 2px solid red; */
+        align-items: center;    
+    }
+    .nam{
+        margin-top: -5px;
+        /* border: 2px solid red; */
+        text-align: left;
+        margin-left: -70px;
+    }
+    .name > img {
+        margin-top: 15px;
+    }
+    .search{
+        /* border: 2px solid red; */
+        width: 800px;
+        margin-left: -20px; 
+        margin-top: 10px;
+        position: relative;
+    }
+    .search > img {
+        height: 50px;
+        width: 60px;
+        margin-left: -25px;
+        position: absolute;
+        margin-top: 2px;
+        background-color: black;
+    }
+    .notice{
+        /* border: 2px solid red;  */
+        height: 40px;
+        width: 200px;
+        margin-left: 10px; 
+        margin-top: 20px;
+    }
+    .notice > img {
+        margin: 5px;
+    }
+    ul{
+        padding: 5px;
+        list-style: none;
+        display: inline-flex;
+        font-weight: 900;
+        margin-left: 10px;
+        /* border: 2px solid hotpink; */
+        height: 30px;
+        position: relative;
+        width: 95vw;
+    }
+    ul li{
+        display: inline-block;
+    }
+    ul li a{
+        display: inline;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+         /* background-color: red; */
+    }
+    ul li a:hover{
+        color: red;  
+    }
+    .social{
+        width: 150px; 
+        height: 30px;
+        /* border: 2px solid green; */
+        margin-left: 400px;
+        margin-top: -5px;
+    }
+    .social > img{
+        margin: 5px;
+        /* border: 1px solid blue; */
+    }
+    .flag{
+        width: 150px; 
+        height: 25px;
+        /* border: 1px solid blue; */
+        display: flex;
+        padding: 5px 15px;
+        gap: 15px;
+        background-color: #f9f8f8; 
+    }
+    div{
+        /* border: 1px solid blue; */
+        width: 200px;
+        height: 38px;
+    }
+    .catergories{
+        width: 210px;
+        height: 380px;
+        margin-left: 20px;
+        align-items: center;
+        text-align: center;
+        font-size: small;
+        font-weight: 500;
+        /* border: 2px solid blue; */
+        /* margin: 5px; */
+    }
+    .image{
+        width: 1073PX;
+        height: 345px;
+        margin-top: 40px;
+        margin-left: 255px;
+        background-color: #f2eeee;
+        position: absolute;
+    }
+    .footer{
+        width: 99vw;
+        height: 107px;
+        /* border: 1px solid tan; */
+        display: flex;
+        margin-top: 20px;
+    }
+    .footer > div{
+        /* border: 1px solid yellowgreen;  */
+        height: 80px;
+        width: 97vw;
+        margin-top: 20px;
+        text-align: right;
+        padding-top: 10px;
+        background-color: #f6f3f3;
+    }
+    .foot{
+        display: flex;
+    }
+    .img {
+        width: 100px;
+       /* border: 1px solid rgb(13, 11, 11); */
+       margin-top: 10px;
+    }
+    .foo{
+        width: 250px;
+        /* border: 1px solid yellowgreen;  */
+       margin-top: 10px;
+       text-align: left;
+       margin-left: -40px;
+    }
+    button{
+        border-radius: 60px;
+        height: 40px;
+        margin-left: 50px;
+        margin-top: 50px;
+        width: 180px;
+        font-weight: 600;
+    }
+    h2, p, h3 {
+        margin-left: 50px;
+    }
+    b{
+        color: red;
+    }
+    label{
+        margin-top: 10px;
+    }
+    .icon{
+       width: 30px;
+       /* border: 1px solid rgb(212, 67, 9); */
+       align-items: center;
+       margin-top: 10px;
+     
+    }
+    .title{
+       width: 170px;
+       /* border: 1px solid green; */
+       text-align: left;
+       font-weight: 500;
+       margin-top: 20px;  
+    }
+    .topic{
+       display: flex;
+       align-items: center;
+       background-color: #f6f3f3;
+    }
+    input{
+       border-radius: 20px;
+       height: 50px;
+       padding-left: 20px;
+      /* background-color: #f3f2f2; */
+       border: 1px solid #f3f2f2;
+    }
+ 
+       
+</style>
+<body>
+    <div class="header">
+        <div class="name">
+            <div> 
+                <img src="./noun-menu-1224576.png" alt="" width="40px" >
+                <img src="./Logo.png" alt=""  width="40px">
+            </div>
+          <div class="nam"> <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Bloxic</h1></div>
+        </div>
+        <div class="search">
+            <label for="">
+             <input type="text"
+              placeholder="Search For Product"
+              size="20">
+             <select name="" id="" style="border: none; margin-left: -40px;"></select>
+            </label>  
+            <label for=""  style="margin-left: 20px;">
+                <input type="text"
+                placeholder="Search Product"
+                size="40">
+            </label> 
+            <img src="./Search2.png" alt="" height="30">
+     </div>
+      <div class="notice">
+         <img src="./Search.png" alt="" width="30px">
+         <img src="./noun-user-1093641.png" alt=""  width="25px">
+         <img src="./Heart2.png" alt="" width="25px">
+         <img src="./Bells.png" alt=""  width="30px">
+        </div> 
+   </div>
+   
+        <div class="container">
+     <div class="catergories">
+             <div class="topic" >
+                 <div class="title" style="background-color: black; color: #f6f3f3;  font-weight: 900; width: 200px; margin-top: 0px; text-align: center; "><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256">
+                 <path fill="white"  d="M222 128a6 6 0 0 1-6 6H40a6 6 0 0 1 0-12h176a6 6 0 0 1 6 6ZM40 70h17
+                 6a6 6 0 0 0 0-12H40a6 6 0 0 0 0 12Zm176 116H40a6 6 0 0 0 0 12h176a6 6 0 0 0 0-12Z"/></svg>
+                  SELECT CATERGORIES
+                </div>
+            </div>
+             <div class="topic" >
+                    <div class="icon"> <img src="./Court Cupboard.png" alt="" height="35px" width="35" style="margin-top: -5px;">
+                    </div>
+                <div class="title">
+                       Court Cupboard
+                </div>
+            </div>
+            <div class="topic" >
+                <div class="icon"> 
+                    <img src="./Cockfighting Chair.png" alt="" height="25">
+                </div>
+                <div class="title">
+                    Cockfighting Chair
+                </div>
+            </div>
+        <div class="topic" >
+            <div class="icon">
+                <img src="./noun-house-4134058.png" alt="" height="25">
+            </div>
+            <div class="title">
+                Platform Rocker
+            </div>
+        </div>
+        <div class="topic" >
+            <div class="icon">
+                <img src="./Drawer1.png" alt="" height="20">
+            </div>
+            <div class="title">
+                Chest Of Drawers
+            </div>
+        </div>
+        <div class="topic" >
+            <div class="icon">
+               <img src="./noun-dressing-table-2469324.png" alt="" height="24">
+            </div>
+            <div class="title">
+                Dressing Table
+            </div>
+        </div>
+        <div class="topic" >
+            <div class="icon">
+              <img src="./noun-clock-1053515.png" alt="" height="24">
+            </div>
+            <div class="title">
+                Grandfather Clock
+            </div>
+        </div>
+        <div class="topic" >
+            <div class="icon">
+                <img src="./Table.png" alt="" height="25">
+            </div>
+            <div class="title">
+                Pembroke Table
+            </div>
+        </div>
+        <div class="topic" >
+            <div class="icon">
+                <img src="./American furniture.png" alt="" height="25">
+            </div>
+            <div class="title">
+                Early American Furniture
+            </div>
+        </div>
+        <div class="topic" >
+            <div class="icon">
+              <img src="./noun-interior-1036885.png" alt="" height="24">
+            </div>
+            <div class="title">
+                Shaker Furniture
+            </div>
+        </div>
+   
+
+    </div>
+    <ul>
+        <li><a href="index.html">Home <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 24 24"><g transform="rotate(-90 12 12)"><path fill="currentColor" d="M10 21.308L.692 12L10 2.692l1.063 1.064L2.82 12l8.244 8.244L10 21.308Z"/></g></svg></a></li>
+        <li><a href="shop.html">About</a></li>
+        <li><a href="cart.html">Shop</a></li>
+        <li><a href="shop1.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <div class="social">
+            <img src="./Face1.png" alt="" height="20px">
+            <img src="./Twitter.png" alt="" height="20px">
+            <img src="./Social1.png" alt="" height="20px">
+            <img src="./Linkedin1.png" alt="" height="20px">
+        </div>
+    </ul>
+    <div class="flag">
+        <img src="./American flag.png" alt="" height="20">
+        <h5>English</h5>
+        <select name="language" id="" style="border: none;">French</select>
+    </div>
+
+    <div class="image">       
+      
+        <button>
+            100% Organic Food
+        </button> <br><br>
+        <h2>
+            Furniture Collection
+        </h2><br>
+        <p>Increased productivity with a simple to-do app</p><br>
+        <h3>Starting From <b>$560.99 </b></h3><br>
+        <button style="border-radius: 1px; margin-top: 15px; background-color: black; color: #f6f3f3;"> See Collection <svg xmlns="http://www.w3.org/2000/svg" width="30" height="9" viewBox="0 0 16 9"><path fill="currentColor" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z"/><path fill="currentColor" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></button>
+        <img src="./Dots (1).png" alt="" height="40" style="margin-top: 40px; margin-left: 320px; position: absolute; transform: rotate(30deg);" >
+          <img src="./1.png" alt="" style="margin-left: 500px; margin-top: -350px; height: 300px">
+       
+    </div>
+  
+</div>
+<div class="footer">
+    <div class="foot">
+        <div class="img"><img src="./Shipping.png" alt="" width="70px"></div>
+        <div class="foo">
+            <h2>Free Shipping</h2>
+            <p>Free shipping over $100</p>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="img"><img src="./security.png" alt="" width="40px"></div>
+        <div class="foo">
+            <h2>Payment Secure</h2>
+        <p>Got 100% Payment Safe</p>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="img"><img src="./Customer-service.png" alt="" width="40px"></div>
+        <div class="foo">
+            <h2>Support 24/7</h2>
+        <p>Top quality 24/7 Support</p>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="img"><img src="./wallet.jpg" alt="" width="50px"></div>
+        <div class="foo">
+            <h2>100% Money Back</h2>
+            <p>Customer's Money Back</p>
+        </div>
+        <a href="form.html"> <img src="./Arrow.png" alt=""  height="25" style="margin-left: 50px; margin-top: 40px;" ></a>
+    </div>
+     
+</div>
+
+</body>
+</html>  

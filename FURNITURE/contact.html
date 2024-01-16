@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><style>
+    *{
+        margin: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .header{
+        display: flex;
+        width: 97vw;
+        height: 50px;
+        /* border: 2px solid red; */
+        /* margin-left: 30px; */
+        background-color: #f3f2f2;
+        padding-left: 20px;
+    }
+    .name{
+        display: flex;
+        /* border: 2px solid red; */
+        width: 250px;
+        height: 50px;
+        margin-top: 4px;
+        margin-left: 50px;
+    }
+    .nam{
+        margin-top: 1px;
+        /* border: 2px solid red; */
+        text-align: left;
+        margin-left: 5px;
+    }
+     .header > ul{
+        padding: 0;
+        list-style: none;
+        display: inline-flex;
+        font-weight: 900;
+        margin-left: 580px;
+        /* border: 2px solid hotpink; */
+        height: 30px;
+        position: relative;
+        margin-top: 20px;
+    }
+    ul li{
+        display: inline-block;
+    }
+    ul li a{
+        display: inline;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+        }
+        ul li a:hover{
+            color: red;
+       }
+       .main{
+            display: flex;
+            margin-top: 5px;
+        }
+        .main > div{
+            text-align: center;
+            /* border: 2px solid red; */
+            height: 170px;
+            width: 220px;
+        }
+        .text{
+            display: flex;
+            margin-top: 30px;
+            margin-left: 120px;
+        }
+        .text > div{
+            text-align: center;
+            /* border: 2px solid red; */
+            height: 200px;
+            width: 220px;
+        }
+        .footer{
+            /* border: 2px solid red; */
+            width: 99vw;
+            height: 60px;
+            margin-top: 98px;
+            display: flex;
+            background-color: #f3f2f2;
+        }
+        .address{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            gap: 10px;
+            /* border: 2px solid red; */
+        }
+        .tel{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            /* border: 2px solid red; */
+        }
+        .text >div > li::before{
+            content: "\2022";
+            color: #c5c5c5;
+            display: inline-block;
+            margin-right: 0.7em;
+            font-weight: bold;
+        }
+</style>
+<body>
+    <div class="header">
+        <div class="name">
+            <div> <img src="./Logo.png" alt="" width="50px">
+                </div>
+          <div class="nam"> <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Bloxic</h1></div>
+        </div>
+        <ul class="header">
+            <li><a href="index.html">Home <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 24 24"><g transform="rotate(-90 12 12)"><path fill="currentColor" d="M10 21.308L.692 12L10 2.692l1.063 1.064L2.82 12l8.244 8.244L10 21.308Z"/></g></svg></a></li>
+            <li><a href="shop.html">About</a></li>
+            <li><a href="cart.html">Shop <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 24 24"><g transform="rotate(-90 12 12)"><path fill="currentColor" d="M10 21.308L.692 12L10 2.692l1.063 1.064L2.82 12l8.244 8.244L10 21.308Z"/></g></svg></a></li>
+            <li><a href="shop1.html">Blog <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 24 24"><g transform="rotate(-90 12 12)"><path fill="currentColor" d="M10 21.308L.692 12L10 2.692l1.063 1.064L2.82 12l8.244 8.244L10 21.308Z"/></g></svg></a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          
+        </ul>
+    </div>
+    <div class="main">
+        <div> <img src="./Home1.jpg" alt="" height="170px" width="240px"></div>
+        <div> <img src="./Home2.jpg" alt="" height="170px" width="240px"></div>
+        <div> <img src="./Home3.jpg" alt="" height="170px" width="240px"></div>
+        <div> <img src="./Home4.jpg" alt="" height="170px" width="240px"></div>
+        <div> <img src="./Home5.jpg" alt="" height="170px" width="240px"></div>
+        <div> <img src="./Home6.jpg" alt="" height="170px" width="240px"></div>
+    </div>
+    <div class="text">
+        <div style="width: 350px;"> 
+            <div class="names" style="margin-left: -10px; margin-top: 1px; display: flex;">
+                <div> <img src="./Logo.png" alt="" width="30px" style="margin-top: 10px;">
+                    </div>
+              <div class="nams"> <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Bloxic</h1></div>
+            </div>
+            <p style="margin-top: 8px; text-align: left; margin-bottom: 15px;">
+                4517 Washington Ave. Manchester, Kentucky 39495 Washington Ave. Manchester
+            </p>
+            <div class="address">
+                <img src="./Map.png" alt="" height="20"> <p>254 Lillian Blvd, Holbrook</p> 
+            </div>
+            <div class="tel">
+              <img src="./Tele1.png" alt="" height="20"> <p> 1-800-654-3210</p>   
+            </div>
+           
+             
+        </div>
+        <div style="text-align: left; margin-left: 20px;"> 
+            <h2 style="margin: 10px;">Find It Fast</h2>
+            <p style="margin: 10px;">Laptops & Computers</p>
+            <p style="margin: 10px;">Cameras & Photography</p>
+            <p style="margin: 10px;">Smart Phones & Tablets</p> 
+            <p style="margin: 10px;">Videos Games & consoles</p>
+            <p style="margin: 10px;">TV & Audio</p>
+        </div>
+        <div style="text-align: left;">
+            <h2 style="margin: 10px;">Quick Links</h2>
+            <p  style="margin: 10px;">Your Account</p>
+            <p  style="margin: 10px;">Returns & Exchanges</p>
+            <p  style="margin: 10px;">Return Center</p>
+            <p  style="margin: 10px;">Purchase History</p>
+            <p  style="margin: 10px;"> App Download</p>
+        </div>
+        <div style="text-align: left;list-style: none;">
+            <h2 style="margin: 10px;">Service us </h2>
+            <li style="margin: 10px;">Support Center</li>
+            <li style="margin: 10px;">Term & Conditions</li>
+            <li style="margin: 10px;">Shipping</li>
+            <li style="margin: 10px;">Privacy Policy</li>
+            <li style="margin: 10px;">Help</li>
+        </div>
+    </div>
+    <div class="footer">
+        <h4 style="color: red; margin-left: 90px; margin-top: 10px;"> &copy 2022<h4>
+            <h4 style="margin: 10px;">Powered by Theme. All Right Reserved.</h4>
+            <div style="width: 100px; height: 40px; border:2px solid rgb(232, 92, 92); margin-top: 10px; margin-left: 180px; border-radius: 20px;text-align: center;"> <p style="margin: 10px;">
+                <img src="./Mail.png" alt="" height="10"> /a></p></div>
+            <div class="card" style="margin-left: 100px;">
+                <img src="./Master.png" alt="" height="30px" width="60px"  style="margin: 10px; background-color: black;">
+                <img src="./Amex.png" alt=""  width="60px" height="35px"  style="margin: 10px;">
+                <img src="./Visa.png" alt="" height="30px"  style="margin: 10px;">
+                <img src="./Discover.png" alt="" height="40px" width="50px"  style="margin: 10px;">
+                <img src="./PayPal.png" alt="" height="30px"  style="margin: 10px;">
+            </div>
+            <a href="form.html"> <img src="./Arrow.png" alt=""  height="20" style="margin-left: 115px; margin-top: 35px;" ></a>
+           
+    </div>
+</body>
+</html>
